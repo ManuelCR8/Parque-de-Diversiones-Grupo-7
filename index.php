@@ -89,6 +89,9 @@ mediante el control y monitoreo de los tiempos de espera y la gestión de atracc
 <li class="list-group-item">
     <a href="comidadmin.php" class="text-decoration-none">ADMINISTRACIÓN - Comidas</a>
 </li>
+<li class="list-group-item">
+        <a href="reporte.php">Reporte Admin</a>
+    </li>
 
 <?php endif; ?>
 

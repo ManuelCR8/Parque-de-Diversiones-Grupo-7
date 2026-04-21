@@ -44,11 +44,12 @@ $imagenes = [
 
                     <div class="card-body text-center">
                         <h5><?= $a['nombre'] ?></h5>
-
+                        <p>Capacidad: <?= $a['cupo'] ?> personas</p>
+                        <p>Duración: <?= $a['duracion'] ?> min</p>
                         <p>Personas en fila: <?= $a['personas'] ?></p>
 
                         <p class="fw-bold text-primary">
-                            Tiempo: <?= $a['tiempo_espera'] ?> min
+                            Tiempo espera: <?= $a['tiempo_espera'] ?> min
                         </p>
                     </div>
 

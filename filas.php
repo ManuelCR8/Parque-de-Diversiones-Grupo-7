@@ -58,6 +58,7 @@ $atracciones = $resultado->fetch_all(MYSQLI_ASSOC);
                         <input type="hidden" name="id" value="<?= $a['id'] ?>">
 
                         <div class="mb-2">
+                            //Campo para ingresar cantidad de personas
                             <input type="number"
                                    name="cantidad"
                                    class="form-control"

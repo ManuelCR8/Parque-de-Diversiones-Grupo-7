@@ -38,6 +38,9 @@ $result = $conexion->query($sql);
 
                     <h5><?= $row['nombre'] ?></h5>
 
+
+                    //Formulario
+
                     <form action="actualizarcomida.php" method="POST">
 
                         <input type="hidden" name="id" value="<?= $row['id'] ?>">
@@ -45,6 +48,9 @@ $result = $conexion->query($sql);
                         <p class="mb-2">
                             Estado actual: <strong><?= $row['estado'] ?></strong>
                         </p>
+
+
+                        //Selección del estado
 
                         <label class="form-label">Estado</label>
                         <select name="estado" class="form-select">
@@ -56,6 +62,7 @@ $result = $conexion->query($sql);
                             </option>
                         </select>
 
+                        //Modificar la cantidad de personas
                         <label class="form-label mt-2">Personas en fila</label>
                         <input type="number"
                                name="personas_fila"
@@ -68,6 +75,7 @@ $result = $conexion->query($sql);
 
                     </form>
 
+                    //Formulario para vaciar
                     <form action="actualizarcomida.php" method="POST" class="mt-2">
 
                         <input type="hidden" name="id" value="<?= $row['id'] ?>">

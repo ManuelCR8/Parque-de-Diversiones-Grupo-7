@@ -39,6 +39,7 @@ $imagenes = [
 
 <?php foreach ($restaurantes as $r): ?>
 
+    // Cálculo del tiempo estimado de espera
     <?php $tiempo = $r['personas_fila'] * 2; ?>
 
     <div class="col-md-4 mb-4">

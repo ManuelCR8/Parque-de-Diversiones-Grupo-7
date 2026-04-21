@@ -1,5 +1,8 @@
 <?php
+
+// Conexión a la base de datos
 include __DIR__ . '/connect.php';
+
 
 $id = $_POST['id'];
 $estado = $_POST['estado'];
@@ -26,6 +29,7 @@ else {
     $conexion->query($sql);
 }
 
+// Después de actualizar, regresa al panel de administración
 header("Location: comidadmin.php");
 exit();
 ?>

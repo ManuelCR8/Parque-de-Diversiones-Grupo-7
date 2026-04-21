@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $correo = $_POST['correo'];
     $password = $_POST['password'];
-
+// Busca el usuario
     $stmt = $conexion->prepare("SELECT * FROM usuarios WHERE correo = ? LIMIT 1");
     $stmt->bind_param("s", $correo);
     $stmt->execute();
@@ -29,7 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: index.php");
             exit();
 
-        } else {
+        } else {           
+ // Contraseña incorrecta
             header("Location: login.php?error=pass");
             exit();
         }
